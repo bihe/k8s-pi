@@ -1,0 +1,2 @@
+kubectl set image deployments/simpleapi-deployment simpleapi=localhost:32000/bihe/simpleapi:latest-arm64
+kubectl set image deployments/simpleapi-deployment simpleapi=localhost:32000/bihe/simpleapi:2.0.0-arm64

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dapr-dashboard
+  namespace: dapr-system
+spec:
+  selector:
+    app: dapr-dashboard
+  type: LoadBalancer
+  ports:
+    - name: dapr-dashboard-port
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  loadBalancerIP: 192.168.1.121
